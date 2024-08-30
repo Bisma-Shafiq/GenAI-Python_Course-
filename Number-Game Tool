@@ -1,1 +1,42 @@
-Using List , Tuple, Loops, Function
+name = str(input("Enter your name: "))
+number = []
+value = ["first", "second", "third"]
+
+for i in range(3):
+    number_value = int(input(f"Enter your {value[i]} favorite number: "))
+    number.append(number_value)
+
+print(f"\nHello, {name}! Let's explore your favorite numbers:")
+
+# Check even or odd
+number_status=[]
+for num in number:
+    if num % 2 == 0:
+        number_status.append((num, "even"))
+    else:
+        number_status.append((num, "odd"))
+for num, status in number_status:
+    print(f"The Number {num} is {status}")
+
+#Square of Numbers
+for num in number:
+    square = num**2
+    print(f"The number {num} and its square:",(num, square))
+
+#Sum of Numbers
+sum_number = sum(number)
+print("Amazing! The sum of your favorite numbers is:",sum_number)
+
+#Checking for Prime Number
+def prime_number(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+if prime_number(sum_number):
+    print(f"Wow, {sum_number} is a prime number!")
+else:
+    print(f"Sorry, {sum_number} is not a prime number.")
+    
