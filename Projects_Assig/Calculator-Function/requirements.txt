@@ -1,0 +1,6 @@
+ Prerequisites
+- Python 3.6 or higher installed.
+
+Installation
+1. Clone this repository or download the script.
+2. Ensure Python is correctly installed by running `python --version` in your terminal or command prompt.
