@@ -1,0 +1,2 @@
+Python 3.0
+VS Code / Jupyter Notebok / Pycharm / Google Colab
